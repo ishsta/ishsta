@@ -5,13 +5,13 @@
 
 | **Ishsta Glass** | **Quick Links** |
 | :--- | :--- |
-| 📍 **Location**: Owasso, OK | 📄 [**Download Resume (PDF)**](https://github.com/ishsta/ishsta/releases/download/latest/resume.pdf) |
-| 🎓 **Education**: Atlas School (CS & ML) | 💼 [**LinkedIn Profile**](https://linkedin.com/in/ishsta-glass) |
-| 💼 **Focus**: ML for Casino Operations | 📧 [**Email Me**](mailto:ishstaglass@yahoo.com) |
+| **Location**: Owasso, OK | [**Download Resume (PDF)**](https://github.com/ishsta/ishsta/releases/download/latest/resume.pdf) |
+| **Education**: Atlas School (CS & ML) | [**LinkedIn Profile**](https://linkedin.com/in/ishsta-glass) |
+| **Focus**: ML for Casino Operations | [**Email Me**](mailto:ishstaglass@yahoo.com) |
 
 ---
 
-## 🎰 About Me: IT & Indian Gaming
+## About Me: IT & Indian Gaming
 I have spent over **6 years in the trenches of IT Operations**, specifically within the high-volume, highly regulated world of **Indian Gaming**.
 
 After years of supporting infrastructure at **Remington Park** and **CT Technologies**, I know exactly how slot floors operate and where they are inefficient. I am now combining that operational grit with Python and ML to build tools that help casinos make smarter, data-driven decisions.
@@ -20,7 +20,7 @@ After years of supporting infrastructure at **Remington Park** and **CT Technolo
 
 ---
 
-## 🚀 Current Goal: Project Native Slots
+## Current Goal: Project Native Slots
 I am currently pivoting my deep domain knowledge into **Machine Learning Engineering**.
 
 My primary focus is developing a proprietary **ML Application for Native Slots**, a company where I serve as an Analyst/Owner.
@@ -30,9 +30,8 @@ My primary focus is developing a proprietary **ML Application for Native Slots**
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![SciKitlearn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
