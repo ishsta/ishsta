@@ -1,0 +1,128 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages
+\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Formatting setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
+}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands for entries
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge \scshape Ishsta Glass} \\ \vspace{1pt}
+    \small Machine Learning Engineer \\ \vspace{1pt}
+    Owasso, OK $|$ (918) 289-7012 \\ 
+    \href{mailto:your.email@example.com}{\underline{Email}} $|$ 
+    \href{https://linkedin.com/in/yourprofile}{\underline{LinkedIn}} $|$ 
+    \href{https://github.com/yourusername}{\underline{GitHub}}
+\end{center}
+
+
+%----------SUMMARY----------
+\section{Summary}
+\small{Highly experienced technical professional with 6+ years of operational IT expertise, specifically in 24/7 systems support across high-volume environments, demonstrating exceptional grit, initiative, and problem-solving skills. Combining this deep technical stability experience with specialized training in Computer Science, Machine Learning (Python, TensorFlow), and foundational C\#/.NET/SQL development.}
+
+
+%----------EXPERIENCE----------
+\section{Experience}
+\begin{itemize}[leftmargin=0.15in, label={}]
+
+    \resumeSubheading
+      {Native Slots}{Claremore, OK}
+      {Owner / Slot Data Analyst}{Nov 2023 -- Present}
+      \resumeItem{Analyze high-volume slot machine data using Python to identify performance trends, optimize floor layouts, and provide actionable insights to casino operations teams.}
+      \resumeItem{Leverage AI tools (Gemini, Claude) and ML concepts (Scikit-Learn, TensorFlow) to model player data and improve analytical efficiency.}
+      \resumeItem{Perform technical diagnostics, configuration, and maintenance on a variety of slot machine platforms to ensure maximum uptime and data integrity.}
+      \resumeItem{Contracted by Indigenous Gaming to perform advanced technical support and data analysis for key clients.}
+
+    \resumeSubheading
+      {Remington Park Casino}{Oklahoma City, OK}
+      {IT Desktop Support}{Aug 2022 -- Nov 2023}
+      \resumeItem{Provided critical 24/7 IT support for casino systems (slot operations, table games, hospitality) and executive/operations teams.}
+      \resumeItem{Managed user accounts and permissions in Active Directory and performed network troubleshooting (TCP/IP, LAN/WAN) to resolve technical issues for 50+ users.}
+      \resumeItem{Troubleshooting, maintaining, and configuring Point of Sale (POS) systems, ensuring data integrity for financial and performance reporting.}
+
+    \resumeSubheading
+      {OU Health}{Oklahoma City, OK}
+      {End User Device Analyst (Contract)}{Mar 2022 -- Jun 2022}
+      \resumeItem{Managed and ensured the accuracy of large endpoint datasets while collaborating with technical services to deploy and test equipment.}
+
+    \resumeSubheading
+      {CT Technologies}{Ponca City, OK}
+      {IT Technician II}{Sep 2017 -- Mar 2021}
+      \resumeItem{Administered hardware, software, and VoIP systems for a 100+ employee casino, ensuring 99\% operational uptime for key POS systems.}
+
+\end{itemize}
+
+
+%----------EDUCATION----------
+\section{Education}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+      {Atlas School}{Tulsa, OK}
+      {Diploma in Computer Science and Machine Learning}{May 2026}
+      \resumeItem{Intensive 20-month program focused on Machine Learning (Python, TensorFlow, Scikit-Learn) and AI-driven data analysis.}
+      \resumeItem{Specialized in building and deploying predictive models while gaining foundational exposure to full-stack development (C\#, .NET, SQL, JavaScript).}
+\end{itemize}
+
+
+%----------SKILLS----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Development}: C, C\#, Python, JavaScript, HTML/CSS, SQL (T-SQL), ASP.NET MVC/Core, Entity Framework, Visual Studio \\
+     \textbf{AI \& Systems}: Gemini, GPT, Claude, TensorFlow, Scikit-Learn, Active Directory, Tableau
+    }}
+\end{itemize}
+
+
+%----------PROJECTS----------
+\section{Projects}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeProjectHeading
+      {\textbf{BERT Tweet Sentiment Analyzer} $|$ \emph{Machine Learning Engineer}}{November 2025}
+      \resumeItem{Developed a sentiment analysis model using BERT to classify tweet data.}
+      \resumeItem{Implemented data preprocessing pipelines and fine-tuned the model for improved accuracy.}
+      \resumeItem{Technologies used: Python, TensorFlow/PyTorch, NLP libraries.}
+\end{itemize}
+
+\end{document}
