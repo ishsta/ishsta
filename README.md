@@ -1,4 +1,4 @@
-# Hi there, I'm Ishsta Glass 👋
+# Hi there, I'm Ishsta Glass
 
 ### Machine Learning Engineer
 *Bridging the gap between Casino Operations and Predictive AI.*
