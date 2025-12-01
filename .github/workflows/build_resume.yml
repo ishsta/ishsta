@@ -1,10 +1,9 @@
 name: Build Resume PDF
 
-# Trigger the action whenever you push to the main branch
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch: # Allows you to manually trigger the build button
+  workflow_dispatch:
 
 jobs:
   build_latex:
@@ -13,12 +12,19 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
 
+      # --- NEW DEBUG STEP ---
+      - name: List files in current directory
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Files in this directory:"
+          ls -R
+      # ----------------------
+
       - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
         with:
-          # REPLACE THIS if your file is named differently
-          root_file: resume.tex 
-          # Runs the compiler multiple times to ensure links/formatting are correct
+          root_file: resume.tex
           args: -pdf -file-line-error -interaction=nonstopmode
 
       - name: Upload PDF as Artifact
