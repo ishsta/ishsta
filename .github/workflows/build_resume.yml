@@ -5,21 +5,16 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+# PERMISSION: This allows the robot to "Write" (create) a release on your repo
+permissions:
+  contents: write
+
 jobs:
-  build_latex:
+  build_and_release:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-
-      # --- NEW DEBUG STEP ---
-      - name: List files in current directory
-        run: |
-          echo "Current directory:"
-          pwd
-          echo "Files in this directory:"
-          ls -R
-      # ----------------------
 
       - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
@@ -27,9 +22,13 @@ jobs:
           root_file: resume.tex
           args: -pdf -file-line-error -interaction=nonstopmode
 
-      - name: Upload PDF as Artifact
-        uses: actions/upload-artifact@v4
+      - name: Publish "Latest" Release
+        uses: ncipollo/release-action@v1
         with:
-          name: Professional-Resume
-          path: resume.pdf
-          retention-days: 14
+          artifacts: "resume.pdf"
+          tag: "latest"
+          name: "Latest Resume Build"
+          body: "This release is automatically updated every time a change is pushed to the main branch."
+          allowUpdates: true
+          makeLatest: true
+          token: ${{ secrets.GITHUB_TOKEN }}
