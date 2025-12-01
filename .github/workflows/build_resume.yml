@@ -1,0 +1,29 @@
+name: Build Resume PDF
+
+# Trigger the action whenever you push to the main branch
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: # Allows you to manually trigger the build button
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          # REPLACE THIS if your file is named differently
+          root_file: resume.tex 
+          # Runs the compiler multiple times to ensure links/formatting are correct
+          args: -pdf -file-line-error -interaction=nonstopmode
+
+      - name: Upload PDF as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Professional-Resume
+          path: resume.pdf
+          retention-days: 14
